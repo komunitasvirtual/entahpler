@@ -127,13 +127,10 @@ async def start(client, message):
         return
     buttons = [
         [
-            InlineKeyboardButton('⚙️ Update Channel', url='https://t.me/subin_works'),
-            InlineKeyboardButton('🧩 Source', url='https://github.com/subinps/VCPlayerBot')
+            InlineKeyboardButton('⚙️ Deploy By', url='https://t.me/xrinhere'),
+            InlineKeyboardButton('🧩 Source', url='https://github.com/iamfth/VCPlayerBot')
         ],
-        [
-            InlineKeyboardButton('👨🏼‍🦯 Help', callback_data='help_main'),
-            InlineKeyboardButton('🗑 Close', callback_data='close'),
-        ]
+        
     ]
     reply_markup = InlineKeyboardMarkup(buttons)
     k = await message.reply(HOME_TEXT.format(message.from_user.first_name, message.from_user.id), reply_markup=reply_markup)
