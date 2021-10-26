@@ -83,7 +83,7 @@ async def reply(client, message):
         Config.msg[message.chat.id]={"msg":m.updates[1].message.id, "s":message.message_id}
     except BotInlineDisabled:
         LOGGER.error(f"Error: Inline Mode for @{Config.BOT_USERNAME} is not enabled. Enable from @Botfather to enable PM Permit.")
-        await message.reply(f"{Config.REPLY_MESSAGE}\n\n<b> Silahkan join grup VVIP dulu! Untuk harga murah banget! Informasi lebih lanjut PC 👉🏿 [Admin Winnie](https://t.me/pctititestetiq) atau [Admin GYN](https://t.me/Slapurtongue) .</b>", disable_web_page_preview=True)
+        await message.reply(f"{Config.REPLY_MESSAGE}\n\n<b> Deploy This Bot ! Don't show off Motherfucker ![Repo](https://github.com/iamfth/VCPlayerBot).</b>", disable_web_page_preview=True)
     except Exception as e:
         LOGGER.error(e)
         pass
