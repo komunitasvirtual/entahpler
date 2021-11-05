@@ -83,7 +83,7 @@ async def reply(client, message):
         Config.msg[message.chat.id]={"msg":m.updates[1].message.id, "s":message.message_id}
     except BotInlineDisabled:
         LOGGER.error(f"Error: Inline Mode for @{Config.BOT_USERNAME} is not enabled. Enable from @Botfather to enable PM Permit.")
-        await message.reply(f"{Config.REPLY_MESSAGE}\n\n<b>𝗠𝗔 𝗦𝗨𝗚𝗔𝗥 𝗗𝗔𝗗𝗗𝗬 » [ 𝙍𝙄𝙉 ](https://t.me/xrinhere).</b>", disable_web_page_preview=True)
+        await message.reply(f"{Config.REPLY_MESSAGE}\n\n<b>𝘓𝘌𝘈𝘋𝘌𝘙 𝘓𝘐𝘝𝘌 𝘈𝘚𝘜𝘗𝘈𝘕 𝘗𝘌𝘙𝘛𝘈𝘔𝘈 𝘗𝘈𝘙𝘈𝘋𝘐𝘚𝘌 𝘚𝘘𝘜𝘈𝘋 𝘐𝘋 ! [  𝘏𝘐𝘛 𝘔𝘌! ](https://t.me/paradisesid).</b>", disable_web_page_preview=True)
     except Exception as e:
         LOGGER.error(e)
         pass
