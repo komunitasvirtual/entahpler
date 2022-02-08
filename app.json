@@ -44,10 +44,6 @@
         "value": "high",
         "required": false
       },
-      "DATABASE_URI": {
-        "description": "Mongo DB database URI , get from https://cloud.mongodb.com, even if this is optional, many of functions may not work if this is not set.",
-        "required": false
-      },
       "ADMINS": {
         "description": "ID of Users who can use Admin commands(for multiple users seperated by space)",
         "required": true
@@ -63,16 +59,6 @@
       },
       "HEROKU_APP_NAME": {
         "description": "Heroku App Name.",
-        "required": false
-      },
-      "STARTUP_STREAM": {
-        "description": "YouTube live / Direct link to a video / Telegram link to a YouTube playlist.(Read the README for more info.) ",
-        "value": "https://youtu.be/zcrUCvBD16k",
-        "required": false
-      },
-      "REPLY_MESSAGE": {
-        "description": "A reply message to those who message the USER account in PM. Make it blank if you do not need this feature.",
-        "value": "Helo Ser, Iam a bot to play music, not havimg time to chat with you.",
         "required": false
       }
     },
