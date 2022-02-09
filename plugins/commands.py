@@ -127,7 +127,7 @@ async def start(client, message):
         return
     buttons = [
         [
-            InlineKeyboardButton('⚙️ Deploy By', url='https://t.me/xrinhere'),
+            InlineKeyboardButton('⚙️ Deploy By', url='https://t.me/escape_aja'),
             InlineKeyboardButton('🧩 Source', url='https://github.com/jokokendi/entahlah')
         ],
         
@@ -183,7 +183,7 @@ async def show_help(client, message):
 async def repo_(client, message):
     buttons = [
         [
-           InlineKeyboardButton('⚙️ Deploy by', url='https://t.me/xrinhere'),
+           InlineKeyboardButton('⚙️ Deploy by', url='https://t.me/escape_aja'),
         ],
         [
       

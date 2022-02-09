@@ -31,7 +31,7 @@ from pyrogram import (
 
 buttons = [
     [
-       InlineKeyboardButton('⚙️ Deploy by', url='https://t.me/paradisesid'),
+       InlineKeyboardButton('⚙️ Deploy by', url='https://t.me/escape_aja'),
     ]
     ]
 def get_cmd(dur):

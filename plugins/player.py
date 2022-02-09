@@ -395,7 +395,7 @@ allcmd = ["play", "player", f"play@{Config.BOT_USERNAME}", f"player@{Config.BOT_
 
 @Client.on_message(filters.command(admincmds) & ~admin_filter & chat_filter)
 async def notforu(_, m: Message):
-    k = await _.send_cached_media(chat_id=m.chat.id, file_id="CAADBQADEgQAAtMJyFVJOe6-VqYVzAI", caption="You Are Not Authorized", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('⚡️Join Here', url='https://t.me/subin_works')]]))
+    k = await _.send_cached_media(chat_id=m.chat.id, file_id="CAADBQADEgQAAtMJyFVJOe6-VqYVzAI", caption="You Are Not Authorized", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('⚡️Join Here', url='https://t.me/musikkuchannel')]]))
     await delete_messages([m, k])
 
 @Client.on_message(filters.command(allcmd) & ~chat_filter & filters.group)
@@ -415,7 +415,7 @@ async def not_chat(_, m: Message):
         buttons = [
             [
                
-                InlineKeyboardButton('🧩 Join Here', url='https://t.me/paradisesid'),
+                InlineKeyboardButton('🧩 Join Here', url='https://t.me/escape_aja'),
             ]
             ]
         await m.reply("<b>You can't use this bot in this group, for that you have to make your own bot from the [SOURCE CODE](https://github.com/subinps/VCPlayerBot) below.</b>", disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(buttons))

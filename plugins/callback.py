@@ -70,7 +70,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         admins = await get_admins(Config.CHAT)
         if query.data.startswith("info"):
             me, you = query.data.split("_")
-            text="Join @subin_works"
+            text="Join @musikkuchannel"
             if you == "volume":
                 await query.answer()
                 await query.message.edit_reply_markup(reply_markup=await volume_buttons())
@@ -402,7 +402,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data=="help":
             buttons = [
                 [
-                    InlineKeyboardButton('⚙️ Deploy by', url='https://t.me/xrinhere'),
+                    InlineKeyboardButton('⚙️ Deploy by', url='https://t.me/escape_aja'),
                    
                 ]
             ]
