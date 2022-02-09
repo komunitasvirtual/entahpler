@@ -50,7 +50,7 @@
       },
       "ADMIN_ONLY": {
         "description": "Change it to True if you want to make /play command available for everyone.",
-        "value": "False",
+        "value": "True",
         "required": false
       },
       "HEROKU_API_KEY": {
