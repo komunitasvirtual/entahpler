@@ -179,234 +179,231 @@ class Config:
 
     #help strings 
     PLAY_HELP="""
-__You can play using any of these options__
+__Anda dapat bermain menggunakan salah satu opsi ini__
 
-1. Play a video from a YouTube link.
-   Command: **/play**
-   __You can use this as a reply to a YouTube link or pass link along command. or as a reply to message to search that in YouTube.__
 
-2. Play from a telegram file.
-   Command: **/play**
-   __Reply to a supported media(video and documents or audio file ).__
- Note: __For both the cases /fplay also can be used by admins to play the song immediately without waiting for queue to end.__
-3. Play from a YouTube playlist
-   Command: **/yplay**
-   __First get a playlist file from @GetPlaylistBot or @DumpPlaylist and reply to playlist file.__
+1. Putar video dari tautan YouTube.
+   Perintah: **/play**
+   __Anda dapat menggunakan ini sebagai balasan ke tautan YouTube atau meneruskan tautan bersama perintah. atau sebagai balasan pesan untuk mencarinya di YouTube.__
 
-4. Live Stream
-   Command: **/stream**
-   __Pass a live stream URL or any direct URL to play it as stream.__
+2. Putar dari file telegram.
+   Perintah: **/play**
+   __Balas ke media yang didukung (video dan dokumen atau file audio).__
+ Catatan: __Untuk kedua kasus /fplay juga dapat digunakan oleh admin untuk memutar lagu segera tanpa menunggu antrian berakhir.__
+3. Putar dari daftar putar YouTube
+   Perintah: **/yplay**
+   __Pertama dapatkan file playlist dari @musikkugroup atau @musikkuchannel dan balas file playlist.__
 
-5. Import an old playlist.
-   Command: **/import**
-   __Reply to a previously exported playlist file. __
+4. Siaran Langsung
+   Perintah: **/stream**
+   __Lewati URL streaming langsung atau URL langsung apa pun untuk memutarnya sebagai streaming.__
+
+5. Impor daftar putar lama.
+   Perintah: **/import**
+   __Balas ke file daftar putar yang diekspor sebelumnya.
 """
     SETTINGS_HELP="""
-**You can easily customize you player as per you needs. The following configurations are available:**
+** Anda dapat dengan mudah menyesuaikan pemain Anda sesuai kebutuhan Anda. Konfigurasi berikut tersedia:**
 
-🔹Command: **/settings**
+Perintah: **/settings**
 
-🔹AVAILABLE CONFIGURATIONS:
+KONFIGURASI YANG TERSEDIA:
 
-**Player Mode** -  __This allows you to run your player as 24/7 music player or only when there is song in queue. 
-If disabled, player will leave from the call when the playlist is empty.
-Otherwise STARTUP_STREAM will be streamed when playlist id empty.__
+**Mode Pemutar** - __Ini memungkinkan Anda menjalankan pemutar sebagai pemutar musik 24/7 atau hanya jika ada lagu dalam antrean.
+Jika dinonaktifkan, pemain akan keluar dari panggilan saat daftar putar kosong.
+Jika tidak, STARTUP_STREAM akan dialirkan saat id daftar putar kosong.__
 
-**Video Enabled** -  __This allows you to switch between audio and video.
-if disabled, video files will be played as audio.__
+**Video Diaktifkan** - __Ini memungkinkan Anda untuk beralih antara audio dan video.
+jika dinonaktifkan, file video akan diputar sebagai audio.__
 
-**Admin Only** - __Enabling this will restrict non-admin users from using play command.__
+**Admin Only** - __Mengaktifkan ini akan membatasi pengguna non-admin menggunakan perintah play.__
 
-**Edit Title** - __Enabling this will edit your VideoChat title to current playing songs name.__
+**Edit Judul** - __Mengaktifkan ini akan mengedit judul VideoChat Anda menjadi nama lagu yang sedang diputar.__
 
-**Shuffle Mode** - __Enabling this will shuffle the playlist whenever you import a playlist or using /yplay __
+**Mode Acak** - __Mengaktifkan ini akan mengacak daftar putar setiap kali Anda mengimpor daftar putar atau menggunakan /yplay __
 
-**Auto Reply** - __Choose whether to reply the PM messages of playing user account.
-You can  set up a custom reply message using `REPLY_MESSAGE` confug.__
-
+**Balasan Otomatis** - __Pilih apakah akan membalas pesan PM dari akun pengguna yang sedang diputar.
+Anda dapat mengatur pesan balasan khusus menggunakan konfigurasi `REPLY_MESSAGE`.__
 """
     SCHEDULER_HELP="""
-__VCPlayer allows you to schedule a stream. 
-This means you can schedule a stream for a future date and on the scheduled date, stream will be played automatically.
-At present you can schedule a stream for even one year!!. Make sure you have set up a databse, else you will loose your schedules whenever the player restarts. __
+__VCPlayer memungkinkan Anda menjadwalkan streaming.
+Ini berarti Anda dapat menjadwalkan streaming untuk tanggal yang akan datang dan pada tanggal yang dijadwalkan, streaming akan diputar secara otomatis.
+Saat ini Anda dapat menjadwalkan streaming bahkan untuk satu tahun!!. Pastikan Anda telah menyiapkan database, jika tidak, Anda akan kehilangan jadwal setiap kali pemutar dimulai ulang. __
 
-Command: **/schedule**
+Perintah: **/schedule**
 
-__Reply to a file or a youtube video or even a text message with schedule command.
-The replied media or youtube video will be scheduled and will be played on the scheduled date.
-The scheduling time is by default in IST and you can change the timezone using `TIME_ZONE` config.__
+__Balas file atau video youtube atau bahkan pesan teks dengan perintah jadwal.
+Media balasan atau video youtube akan dijadwalkan dan akan diputar pada tanggal yang dijadwalkan.
+Waktu penjadwalan secara default di IST dan Anda dapat mengubah zona waktu menggunakan konfigurasi `TIME_ZONE`.__
 
-Command: **/slist**
-__View your current scheduled streams.__
+Perintah: **/slist**
+__Lihat streaming terjadwal Anda saat ini.__
 
-Command: **/cancel**
-__Cancel a schedule by its schedule id, You can get the schedule id using /slist command__
+Perintah: **/cancel**
+__Batalkan jadwal dengan id jadwalnya, Anda bisa mendapatkan id jadwal menggunakan perintah /slist__
 
-Command: **/cancelall**
-__Cancel all the scheduled streams__
+Perintah: **/cancelall**
+__Batalkan semua streaming terjadwal__
 """
     RECORDER_HELP="""
-__With VCPlayer you can easily record all your video chats.
-By default telegram allows you to record for a maximum duration of 4 hours. 
-An attempt to overcome this limit has been made by automatically restarting the recording after  4 hours__
+__Dengan VCPlayer Anda dapat dengan mudah merekam semua obrolan video Anda.
+Secara default telegram memungkinkan Anda merekam untuk durasi maksimum 4 jam.
+Upaya untuk mengatasi batas ini telah dilakukan dengan memulai ulang perekaman secara otomatis setelah 4 jam__
 
-Command: **/record**
+Perintah: **/record**
 
-AVAILABLE CONFIGURATIONS:
-1. Record Video: __If enabled both the video and audio of the stream will be recorded, otherwise only audio will be recorded.__
+KONFIGURASI YANG TERSEDIA:
+1. Rekam Video: __Jika diaktifkan, video dan audio streaming akan direkam, jika tidak, hanya audio yang akan direkam.__
 
-2. Video dimension: __Choose between portrait and landscape dimensions for your recording__
+2. Dimensi video: __Pilih antara dimensi potret dan lanskap untuk rekaman Anda__
 
-3. Custom Recording Title: __Set up a custom recording title for your recordings. Use a command /rtitle to configure this.
-To turn off the custom title, use `/rtitle False `__
+3. Judul Rekaman Kustom: __Atur judul rekaman khusus untuk rekaman Anda. Gunakan perintah /rtitle untuk mengkonfigurasi ini.
+Untuk menonaktifkan judul khusus, gunakan `/rtitle False `__
 
-4. Recording Dumb: __You can set up forwarding all your recordings to a channel, this will be useful since otherwise recordings are sent to saved messages of streaming account.
-Setup using `RECORDING_DUMP` config.__
+4. Merekam Bodoh: __Anda dapat mengatur penerusan semua rekaman Anda ke saluran, ini akan berguna karena jika tidak, rekaman akan dikirim ke pesan tersimpan dari akun streaming.
+Setup menggunakan `RECORDING_DUMP` config.__
 
-⚠️ If you start a recording with vcplayer, make sure you stop the same with vcplayer.
-
+⚠️ Jika Anda memulai rekaman dengan vcplayer, pastikan Anda menghentikannya dengan vcplayer.
 """
 
     CONTROL_HELP="""
-__VCPlayer allows you to control your streams easily__
-1. Skip a song.
-    Command: **/skip**
-    __You can pass a number greater than 2 to skip the song in that position.__
+__VCPlayer memungkinkan Anda mengontrol streaming dengan mudah__
+1. Lewati lagu.
+    Perintah: **/skip**
+    __Anda dapat melewati angka yang lebih besar dari 2 untuk melewati lagu di posisi tersebut.__
 
- 2. Pause the player.
-    Command: **/pause**
+ 2. Jeda pemutar.
+    Perintah: **/pause**
 
- 3. Resume the player.
-    Command: **/resume**
+ 3. Lanjutkan pemutar.
+    Perintah: **/resume**
 
- 4. Change Volume.
-    Command: **/volume**
-    __Pass the volume in between 1-200.__
+ 4. Ubah Volume.
+    Perintah: **/volume**
+    __Lewati volume di antara 1-200.__
 
- 5. Leave the VC.
-    Command: **/leave**
+ 5. Tinggalkan VC.
+    Perintah: **/leave**
 
- 6. Shuffle the playlist.
-    Command: **/shuffle**
+ 6. Acak daftar putar.
+    Perintah: **/shuffle**
 
- 7. Clear the current playlist queue.
-    Command: **/clearplaylist**
+ 7. Kosongkan antrean daftar putar saat ini.
+    Perintah: **/clearplaylist**
 
- 8. Seek the video.
-    Command: **/seek**
-    __You can pass number of seconds to be skipped. Example: /seek 10 to skip 10 sec. /seek -10 to rewind 10 sec.__
+ 8. Cari videonya.
+    Perintah: **/seek**
+    __Anda dapat melewatkan beberapa detik untuk dilewati. Contoh: /seek 10 untuk melewati 10 detik. /seek -10 untuk memundurkan 10 detik.__
 
- 9. Mute the player.
-    Command: **/mute**
+ 9. Matikan suara pemutar.
+    Perintah: **/mute**
 
- 10. Unmute the player.
-    Command : **/unmute**
+ 10. Suarakan pemutar.
+    Perintah : **/unmute**
 
- 11. Shows the playlist.
-    Command: **/playlist** 
-    __Use /player to show with control buttons__
-"""
+ 11. Menampilkan daftar putar.
+    Perintah: **/playlists**
+    __Gunakan /player untuk ditampilkan dengan tombol kontrol__
+ """
 
     ADMIN_HELP="""
-__VCPlayer allows to control admins, that is you can add admins and remove them easily.
-It is recommended to use a MongoDb database for better experience, else all you admins will get reset after restart.__
+__VCPlayer memungkinkan untuk mengontrol admin, yaitu Anda dapat menambahkan admin dan menghapusnya dengan mudah.
+Disarankan untuk menggunakan database MongoDb untuk pengalaman yang lebih baik, jika tidak semua admin Anda akan direset setelah restart.__
 
-Command: **/vcpromote**
-__You can promote a admin with their username or user id or by replying to that users message.__
+Perintah: **/vcpromote**
+__Anda dapat mempromosikan admin dengan nama pengguna atau id pengguna mereka atau dengan membalas pesan pengguna tersebut.__
 
-Command: **/vcdemote**
-__Remove an admin from admin list__
+Perintah: **/vcdemote**
+__Hapus admin dari daftar admin__
 
-Command: **/refresh**
-__Refresh the admin list of chat__
+Perintah: **/refresh**
 """
 
     MISC_HELP="""
-Command: **/export**
-__VCPlayer allows you to export your current playlist for future use.__
-__A json file will be sent to you and the same can be used along /import command.__
+Perintah: **/export**
+__VCPlayer memungkinkan Anda mengekspor daftar putar Anda saat ini untuk penggunaan di masa mendatang.__
+__Sebuah file json akan dikirimkan kepada Anda dan hal yang sama dapat digunakan bersama perintah /import.__
 
-Command : **/logs**
-__If your player went something gone wrong, you can easily check the logs using /logs__
+Perintah : **/logs**
+__Jika pemutar Anda mengalami kesalahan, Anda dapat dengan mudah memeriksa log menggunakan /logs__
  
-Command : **/env**
-__Setup your config vars with /env command.__
-__Example: To set up a__ `REPLY_MESSAGE` __use__ `/env REPLY_MESSAGE=Hey, Check out @musikkuchannel rather than spamming in my PM`__
-__You can delete a config var by ommiting a value for that, Example:__ `/env LOG_GROUP=` __this will delete the existing LOG_GROUP config.
+Perintah : **/env**
+__Setup vars konfigurasi Anda dengan perintah /env.__
+__Contoh: Untuk mengatur a__ `REPLY_MESSAGE` __use__ `/env REPLY_MESSAGE=Hai, Lihat @musikkuchannel daripada spam di PM`__
+__Anda dapat menghapus var konfigurasi dengan menghilangkan nilai untuk itu, Contoh:__ `/env LOG_GROUP=` __ini akan menghapus konfigurasi LOG_GROUP yang ada.
 
-Command: **/config**
-__Same as using /env**
+Perintah: **/config**
+__Sama seperti menggunakan /env**
 
-Command: **/update**
-__Updates youe bot with latest changes__
+Perintah: **/update**
+__Memperbarui bot Anda dengan perubahan terbaru__
 
-Tip: __You can easily change the CHAT config by adding the user account and bot account to any other group and any command in new group__
-
+Tip: __Anda dapat dengan mudah mengubah konfigurasi CHAT dengan menambahkan akun pengguna dan akun bot ke grup lain dan perintah apa pun di grup baru__
 """
     ENV_HELP="""
-**These are the configurable vars available and you can set each one of them using /env command**
+**Ini adalah vars yang dapat dikonfigurasi yang tersedia dan Anda dapat mengaturnya masing-masing menggunakan perintah /env**
 
 
-**Mandatory Vars**
+**Vars Wajib**
 
-1. `API_ID` : __Get From [my.telegram.org](https://my.telegram.org/)__
+1. `API_ID` : __Dapatkan Dari [my.telegram.org](https://my.telegram.org/)__
 
-2. `API_HASH` : __Get from [my.telegram.org](https://my.telegram.org)__
+2. `API_HASH` : __Dapatkan dari [my.telegram.org](https://my.telegram.org)__
 
 3. `BOT_TOKEN` : __[@Botfather](https://telegram.dog/BotFather)__
 
-4. `SESSION_STRING` : __Generate From here [GenerateStringName](https://repl.it/@subinps/getStringName)__
+4. `SESSION_STRING` : __Hasilkan Dari sini [GenerateStringName](https://repl.it/@subinps/getStringName)__
 
-5. `CHAT` : __ID of Channel/Group where the bot plays Music.__
+5. `CHAT` : __ID Channel/Grup tempat bot memutar Musik.__
 
-6. `STARTUP_STREAM` : __This will be streamed on startups and restarts of bot. 
-You can use either any STREAM_URL or a direct link of any video or a Youtube Live link. 
-You can also use YouTube Playlist.Find a Telegram Link for your playlist from [PlayList Dumb](https://telegram.dog/DumpPlaylist) or get a PlayList from [PlayList Extract](https://telegram.dog/GetAPlaylistbot). 
-The PlayList link should in form `https://t.me/kenkanasw/xxx`.__
+6. `STARTUP_STREAM` : __Ini akan dialirkan pada startup dan restart bot.
+Anda dapat menggunakan STREAM_URL apa pun atau tautan langsung dari video mana pun atau tautan Youtube Live.
+Anda juga dapat menggunakan Daftar Putar YouTube. Temukan Tautan Telegram untuk daftar putar Anda dari [PlayList Dumb](https://telegram.dog/DumpPlaylist) atau dapatkan Daftar Putar dari [Ekstrak PlayList](https://telegram.dog/GetAPlaylistbot) .
+Tautan Daftar Putar harus dalam bentuk `https://t.me/kenkanasw/xxx`.__
 
-**Recommended Optional Vars**
+**Vars Opsional yang Direkomendasikan**
 
-1. `DATABASE_URI`: __MongoDB database Url, get from [mongodb](https://cloud.mongodb.com). This is an optional var, but it is recomonded to use this to experiance the full features.__
+1. `DATABASE_URI`: __ Url database MongoDB, dapatkan dari [mongodb](https://cloud.mongodb.com). Ini adalah var opsional, tetapi disarankan untuk menggunakan ini untuk merasakan fitur lengkapnya.__
 
-2. `HEROKU_API_KEY`: __Your heroku api key. Get one from [here](https://dashboard.heroku.com/account/applications/authorizations/new)__
+2. `HEROKU_API_KEY`: __Kunci api heroku Anda. Dapatkan satu dari [di sini](https://dashboard.heroku.com/account/applications/authorizations/new)__
 
-3. `HEROKU_APP_NAME`: __Your heroku app's name.__
+3. `HEROKU_APP_NAME`: __Nama aplikasi heroku Anda.__
 
-**Other Optional Vars**
-1. `LOG_GROUP` : __Group to send Playlist, if CHAT is a Group__
+**Vars Opsional Lainnya**
+1. `LOG_GROUP` : __Group untuk mengirim Playlist, jika CHAT adalah Group__
 
-2. `ADMINS` : __ID of users who can use admin commands.__
+2. `ADMINS` : __ID pengguna yang dapat menggunakan perintah admin.__
 
-3. `REPLY_MESSAGE` : __A reply to those who message the USER account in PM. Leave it blank if you do not need this feature. (Configurable through buttons if mongodb added. Use /settings)__
+3. `REPLY_MESSAGE` : __A membalas mereka yang mengirim pesan ke akun USER di PM. Biarkan kosong jika Anda tidak membutuhkan fitur ini. (Dapat dikonfigurasi melalui tombol jika mongodb ditambahkan. Gunakan /settings)__
 
-4. `ADMIN_ONLY` : __Pass `True` If you want to make /play command only for admins of `CHAT`. By default /play is available for all.(Configurable through buttons if mongodb added. Use /settings)__
+4. `ADMIN_ONLY` : __Pass `True` Jika Anda ingin membuat perintah /play hanya untuk admin `CHAT`. Secara default /play tersedia untuk semua.(Dapat dikonfigurasi melalui tombol jika mongodb ditambahkan. Gunakan /settings)__
 
-5. `DATABASE_NAME`: __Database name for your mongodb database.mongodb__
+5. `DATABASE_NAME`: __Nama database untuk database mongodb Anda.mongodb__
 
-6. `SHUFFLE` : __Make it `False` if you dont want to shuffle playlists. (Configurable through buttons)__
+6. `SHUFFLE` : __Jadikan `False` jika Anda tidak ingin mengacak playlist. (Dapat dikonfigurasi melalui tombol)__
 
-7. `EDIT_TITLE` : __Make it `False` if you do not want the bot to edit video chat title according to playing song. (Configurable through buttons if mongodb added. Use /settings)__
+7. `EDIT_TITLE` : __Jadikan `False` jika tidak ingin bot mengedit judul video chat sesuai lagu yang diputar. (Dapat dikonfigurasi melalui tombol jika mongodb ditambahkan. Gunakan /settings)__
 
-8. `RECORDING_DUMP` : __A Channel ID with the USER account as admin, to dump video chat recordings.__
+8. `RECORDING_DUMP` : __A Channel ID dengan akun USER sebagai admin, untuk membuang rekaman video chat.__
 
-9. `RECORDING_TITLE`: __A custom title for your videochat recordings.__
+9. `RECORDING_TITLE`: __Judul khusus untuk rekaman obrolan video Anda.__
 
-10. `TIME_ZONE` : __Time Zone of your country, by default IST__
+10. `TIME_ZONE` : __Zona Waktu negara Anda, secara default IST__
 
-11. `IS_VIDEO_RECORD` : __Make it `False` if you do not want to record video, and only audio will be recorded.(Configurable through buttons if mongodb added. Use /record)__
+11. `IS_VIDEO_RECORD` : __Jadikan `False` jika Anda tidak ingin merekam video, dan hanya audio yang akan direkam. (Dapat dikonfigurasi melalui tombol jika mongodb ditambahkan. Gunakan /record)__
 
-12. `IS_LOOP` ; __Make it `False` if you do not want 24 / 7 Video Chat. (Configurable through buttons if mongodb added.Use /settings)__
+12. `IS_LOOP` ; __Jadikan `False` jika Anda tidak ingin Obrolan Video 24/7. (Dapat dikonfigurasi melalui tombol jika mongodb ditambahkan. Gunakan /pengaturan)__
 
-13. `IS_VIDEO` : __Make it `False` if you want to use the player as a musicplayer without video. (Configurable through buttons if mongodb added. Use /settings)__
+13. `IS_VIDEO` : __Jadikan `False` jika ingin menggunakan player sebagai pemutar musik tanpa video. (Dapat dikonfigurasi melalui tombol jika mongodb ditambahkan. Gunakan /settings)__
 
-14. `PORTRAIT`: __Make it `True` if you want the video recording in portrait mode. (Configurable through buttons if mongodb added. Use /record)__
+14. `PORTRAIT`: __Jadikan `True` jika Anda ingin merekam video dalam mode potret. (Dapat dikonfigurasi melalui tombol jika mongodb ditambahkan. Gunakan /record)__
 
-15. `DELAY` : __Choose the time limit for commands deletion. 10 sec by default.__
+15. `DELAY` : __Pilih batas waktu untuk menghapus perintah. 10 detik secara default.__
 
-16. `QUALITY` : __Customize the quality of video chat, use one of `high`, `medium`, `low` . __
+16. `QUALITY` : __Sesuaikan kualitas video chat, gunakan salah satu dari `high`, `medium`, `low` . __
 
-17. `BITRATE` : __Bitrate of audio (Not recommended to change).__
+17. `BITRATE` : __Bitrate audio (Tidak disarankan untuk diubah).__
 
-18. `FPS` : __Fps of video to be played (Not recommended to change.)__
+18. `FPS` : __Fps video yang akan diputar (Tidak disarankan untuk diubah.)__
 
 """

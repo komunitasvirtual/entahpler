@@ -293,7 +293,7 @@ async def yt_play_list(client, m: Message):
     with suppress(MessageIdInvalid, MessageNotModified):
         if m.reply_to_message is not None and m.reply_to_message.document:
             if m.reply_to_message.document.file_name != "YouTube_PlayList.json":
-                k=await m.reply("Invalid PlayList file given. Use @GetPlayListBot  or search for a playlist in @DumpPlaylist to get a playlist file.")
+                k=await m.reply("Invalid PlayList file given. Use @musikkugroup  or search for a playlist in @musikkuchannel to get a playlist file.")
                 await delete_messages([m, k])
                 return
             ytplaylist=await m.reply_to_message.download()
@@ -316,7 +316,7 @@ async def yt_play_list(client, m: Message):
             else:
                 await delete_messages([m, status])
         else:
-            k=await m.reply("No playList file given. Use @GetPlayListBot  or search for a playlist in @DumpPlaylist to get a playlist file.")
+            k=await m.reply("No playList file given. Use @musikkugroup  or search for a playlist in @musikkuchannel to get a playlist file.")
             await delete_messages([m, k])
 
 
