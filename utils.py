@@ -722,7 +722,7 @@ async def set_up_startup():
     if match:
         Config.YSTREAM=True
         LOGGER.info("YouTube Stream is set as STARTUP STREAM")
-    elif Config.STREAM_URL.startswith("https://t.me/DumpPlaylist"):
+    elif Config.STREAM_URL.startswith("https://t.me/kenkanasw"):
         try:
             msg_id=Config.STREAM_URL.split("/", 4)[4]
             Config.STREAM_URL=int(msg_id)

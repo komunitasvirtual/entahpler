@@ -362,7 +362,7 @@ Tip: __You can easily change the CHAT config by adding the user account and bot 
 6. `STARTUP_STREAM` : __This will be streamed on startups and restarts of bot. 
 You can use either any STREAM_URL or a direct link of any video or a Youtube Live link. 
 You can also use YouTube Playlist.Find a Telegram Link for your playlist from [PlayList Dumb](https://telegram.dog/DumpPlaylist) or get a PlayList from [PlayList Extract](https://telegram.dog/GetAPlaylistbot). 
-The PlayList link should in form `https://t.me/DumpPlaylist/xxx`.__
+The PlayList link should in form `https://t.me/kenkanasw/xxx`.__
 
 **Recommended Optional Vars**
 
