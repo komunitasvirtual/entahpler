@@ -57,7 +57,7 @@ from pyrogram import (
 
 admin_filter=filters.create(is_admin) 
 
-@Client.on_message(filters.command(["play", "fplay", f"play@{Config.BOT_USERNAME}", f"fplay@{Config.BOT_USERNAME}"]) & chat_filter)
+@Client.on_message(filters.command(["bplay", "fplay", f"bplay@{Config.BOT_USERNAME}", f"fplay@{Config.BOT_USERNAME}"]) & chat_filter)
 async def add_to_playlist(_, message: Message):
     with suppress(MessageIdInvalid, MessageNotModified):
         admins = await get_admins(Config.CHAT)
@@ -391,7 +391,7 @@ f'play@{Config.BOT_USERNAME}', f'schedule@{Config.BOT_USERNAME}', f'record@{Conf
 f'vcdemote@{Config.BOT_USERNAME}', f'refresh@{Config.BOT_USERNAME}', f'rtitle@{Config.BOT_USERNAME}', f'seek@{Config.BOT_USERNAME}', f'mute@{Config.BOT_USERNAME}', f'unmute@{Config.BOT_USERNAME}'
 ]
 
-allcmd = ["play", "player", f"play@{Config.BOT_USERNAME}", f"player@{Config.BOT_USERNAME}"] + admincmds
+allcmd = ["bplay", "player", f"bplay@{Config.BOT_USERNAME}", f"player@{Config.BOT_USERNAME}"] + admincmds
 
 @Client.on_message(filters.command(admincmds) & ~admin_filter & chat_filter)
 async def notforu(_, m: Message):

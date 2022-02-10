@@ -122,7 +122,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton(f"Play", callback_data='help_play'),
+                            InlineKeyboardButton(f"bplay", callback_data='help_play'),
                             InlineKeyboardButton(f"Settings", callback_data=f"help_settings"),
                             InlineKeyboardButton(f"Recording", callback_data='help_record'),
                         ],

@@ -61,7 +61,7 @@ async def start(client, message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(f"Play", callback_data='help_play'),
+                        InlineKeyboardButton(f"bplay", callback_data='help_play'),
                         InlineKeyboardButton(f"Settings", callback_data=f"help_settings"),
                         InlineKeyboardButton(f"Recording", callback_data='help_record'),
                     ],
@@ -143,7 +143,7 @@ async def show_help(client, message):
     reply_markup=InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("Play", callback_data='help_play'),
+                InlineKeyboardButton("bplay", callback_data='help_play'),
                 InlineKeyboardButton("Settings", callback_data=f"help_settings"),
                 InlineKeyboardButton("Recording", callback_data='help_record'),
             ],
