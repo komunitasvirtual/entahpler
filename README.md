@@ -27,7 +27,7 @@ Telegram bot to stream videos in telegram voicechat for both groups and channels
 2. `ADMINS` : ID of users who can use admin commands.
 3. `STARTUP_STREAM` : This will be streamed on startups and restarts of bot. You can use either any STREAM_URL or a direct link of any video or a Youtube Live link. You can also use YouTube Playlist.Find a Telegram Link for your playlist from [PlayList Dumb](https://telegram.dog/musikkuchannel) or get a PlayList from [PlayList Extract](https://telegram.dog/GetAPlaylistbot). The PlayList link should in form `https://t.me/kenkanasw/xxx`.
 4. `REPLY_MESSAGE` : A reply to those who message the USER account in PM. Leave it blank if you do not need this feature. (Configurable through bot if mongodb added.)
-5. `ADMIN_ONLY` : Pass `True` If you want to make /play command only for admins of `CHAT`. By default /play is available for all.(Configurable through bot if mongodb added.)
+5. `ADMIN_ONLY` : Pass `True` If you want to make /bplay command only for admins of `CHAT`. By default /bplay is available for all.(Configurable through bot if mongodb added.)
 6. `DATABASE_NAME`: Database name for your mongodb database.
 7. `SHUFFLE` : Make it `False` if you dont want to shuffle playlists. (Configurable through bot if mongodb added.)
 8. `EDIT_TITLE` : Make it `False` if you do not want the bot to edit video chat title according to playing song. (Configurable through bot if mongodb added.)

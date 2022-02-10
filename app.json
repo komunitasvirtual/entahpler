@@ -49,7 +49,7 @@
         "required": true
       },
       "ADMIN_ONLY": {
-        "description": "Change it to True if you want to make /play command available for everyone.",
+        "description": "Change it to True if you want to make /bplay command available for everyone.",
         "value": "True",
         "required": false
       },

@@ -183,11 +183,11 @@ __Anda dapat bermain menggunakan salah satu opsi ini__
 
 
 1. Putar video dari tautan YouTube.
-   Perintah: **/play**
+   Perintah: **/bplay**
    __Anda dapat menggunakan ini sebagai balasan ke tautan YouTube atau meneruskan tautan bersama perintah. atau sebagai balasan pesan untuk mencarinya di YouTube.__
 
 2. Putar dari file telegram.
-   Perintah: **/play**
+   Perintah: **/bplay**
    __Balas ke media yang didukung (video dan dokumen atau file audio).__
  Catatan: __Untuk kedua kasus /fplay juga dapat digunakan oleh admin untuk memutar lagu segera tanpa menunggu antrian berakhir.__
 3. Putar dari daftar putar YouTube
@@ -376,7 +376,7 @@ Tautan Daftar Putar harus dalam bentuk `https://t.me/kenkanasw/xxx`.__
 
 3. `REPLY_MESSAGE` : __A membalas mereka yang mengirim pesan ke akun USER di PM. Biarkan kosong jika Anda tidak membutuhkan fitur ini. (Dapat dikonfigurasi melalui tombol jika mongodb ditambahkan. Gunakan /settings)__
 
-4. `ADMIN_ONLY` : __Pass `True` Jika Anda ingin membuat perintah /play hanya untuk admin `CHAT`. Secara default /play tersedia untuk semua.(Dapat dikonfigurasi melalui tombol jika mongodb ditambahkan. Gunakan /settings)__
+4. `ADMIN_ONLY` : __Pass `True` Jika Anda ingin membuat perintah /bplay hanya untuk admin `CHAT`. Secara default /bplay tersedia untuk semua.(Dapat dikonfigurasi melalui tombol jika mongodb ditambahkan. Gunakan /settings)__
 
 5. `DATABASE_NAME`: __Nama database untuk database mongodb Anda.mongodb__
 

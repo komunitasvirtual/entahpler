@@ -36,7 +36,7 @@ buttons = [
     ]
 def get_cmd(dur):
     if dur:
-        return "/play"
+        return "/bplay"
     else:
         return "/stream"
 @Client.on_inline_query()

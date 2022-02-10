@@ -369,7 +369,7 @@ async def stream(client, m: Message):
         except:
             dur=0
         if dur != 0:
-            k = await msg.edit("This is not a live stream, Use /play command.")
+            k = await msg.edit("This is not a live stream, Use /bplay command.")
             await delete_messages([m, k])
             return
         k, msg_=await stream_from_link(stream_link)
